@@ -51,6 +51,7 @@ data_1 = {
 'comment_post_ID': '13',
 'comment_parent': '0'
 }
+
 # 评论的参数。
 comment = session.post(url_1,headers=headers,data=data_1)
 # 在创建的session下用post发起评论请求，放入参数：文章网址，请求头和评论参数，并赋值给comment。

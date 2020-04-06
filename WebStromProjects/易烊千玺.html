@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card_Practice</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3246165457.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .div1{
+            width:600px;
+            height: 540px;
+            margin:20px;
+            font-size: 1em;
+            position: relative;
+            background-color: #444444;
+            border-radius: 12px;
+            box-shadow: 0 0 20px black;
+            transition: all ease 0.5s;
+            overflow: hidden;
+        }
+        .handsome {
+            background: url("https://up.enterdesk.com/edpic/ef/8e/b0/ef8eb0684c6a8aab799fdc61841391b8.jpg");
+            background-size: cover;
+            width: 580px;
+            height: 330px;
+            position: relative;
+            font-family: 'Dancing Script', cursive;
+            float: left;
+            padding: 10px;
+
+        }
+        .div1:hover{
+            box-shadow: 0 3px 6px 3px grey;
+            transform: translateY(-2px);
+        }
+        .text {
+            margin-top: 25px;
+            padding: 2em;
+            font-size: 20px;
+            color: whitesmoke;
+            font-family: 'Dancing Script', cursive;
+            position: absolute;
+            top: 300px;
+            text-shadow: 2px 2px 1px black;
+            cursor: pointer;
+        }
+        .mark{
+            position:absolute;
+            right:1.5em;
+            color:wheat;
+            font-size: 25px;
+            text-shadow: 1px 1px 2px black;
+            cursor: pointer;
+            transition: all ease 0.5s;
+        }
+        .mark:hover{
+            text-shadow: 0 0 4px black;
+            transform: translateY(-2px);
+        }
+        .description{
+            font-family:'Baloo 2', cursive;
+            font-size: 16px;
+        }
+        .icon {
+            font-size: 30px;
+            color: white;
+            padding: 365px 50px 100px 495px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="div1">
+    <div class="handsome">
+        <div class="mark">Jackson Yee</div>
+    </div>
+    <div class="icon">
+        <i class="far fa-heart"></i>
+    </div>
+    <div class="text">
+        <strong>易烊千玺</strong>
+        <p class="description">---A Chinese singer, dancer and actor. After a talent manager discovered him at a children
+            talent competition, where he performed a hip-hop dance, and signed to TF Entertainment, Jackson became
+            the youngest member of the Chinese boy band TFBoys in 2013.</p>
+    </div>
+</div>
+</body>
+</html>
