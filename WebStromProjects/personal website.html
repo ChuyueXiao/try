@@ -8,110 +8,73 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/3246165457.js" crossorigin="anonymous">
+        // const element =  document.querySelector('.start')
+        // element.classList.add('animated', 'bounceOutLeft')
+    </script>
     <style type="text/css">
-        .page{
-            /*display: flex;*/
+        .part1{
+            width: 100%;
+            height: 550px;
+            background-color: whitesmoke;
+            margin-top: 0;
+            position: relative;
         }
-        .div0{
-            margin:20px;
+        .nav{
+            margin-top:20px;
             display:flex;
             justify-content: flex-end;
-
+            position: absolute;
         }
+
         .item{
             font-size: 18px;
             font-family: 'Raleway', sans-serif;
-            width: 150px;
+            width: 200px;
             text-align: center;
             cursor: pointer;
             transition: all ease 0.5s;
-
         }
         .item:hover{
-            text-shadow: 0 0 1px grey;
             transform: translateY(-2px);
         }
-        .div1{
-            width:1320px;
-            height: 700px;
-            margin:10px;
-            font-size: 2em;
-
-        }
-        .div2{
-
-            height:500px;
-            width: 920px;
-            margin:20px;
-            padding:40px;
-            border-radius: 8px;
-            background:linear-gradient(#f0d8de, #fff9f8);
-            overflow: auto;
-            position: absolute;
-            top: 800px;
-            left: 30px;
-            color: dimgrey;
-            float: right;
-            font-size: 20px;
-            box-shadow: 0 0 10px black;
-            transition: all ease 0.5s;
-        }
-        .div2:hover{
-            box-shadow: 0 5px 4px 5px grey;
-            transform: translateY(-8px);
-        }
-        .div3{
-            width:920px;
-            height:500px;
-            margin:20px;
-            padding:40px;
-            border-radius: 8px;
-            font-size: 20px;
-            background:linear-gradient(#fff9f8,#f0d8de);
-            color:dimgrey;
-            position: absolute;
-            right: 30px;
-            top:1400px;
-            overflow: auto;
-            box-shadow: 0 0 10px black;
-            transition: all ease 0.5s;
-
-        }
-        .div3:hover{
-            box-shadow: 0 5px 4px 5px grey;
-            transform: translateY(-8px);
-        }
-
         body{
-            background-color: #f0d8de;
+            background-color: #e66f78;
             font-family:'Baloo 2', cursive;
+            /*display:flex; */
         }
 
         .summary{
-            background:linear-gradient(white,#f0d8de);
-            width: 930px;
+            background:linear-gradient(#3f3f3f, #252525);
+            width: 980px;
             height: 580px;
             position: relative;
             float:right;
-            padding:30px;
+            padding:20px;
             border-radius: 15px;
-            box-shadow: 0 0 10px black;
+            box-shadow: 0 0 6px grey;
             transition: all ease 0.5s;
-            margin: 30px 0 0 0;
+            margin: 150px 100px 0 0;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
         }
 
-        .text{
-            font-size: 40px;
-            color:#3f3f3f;
-            position: absolute;
-        }
-        .title{
-            font-size: 25px;
-            color:#3f3f3f;
-        }
         .about{
-            color: #3f3f3f;
-            font-size: 20px;
+            color: wheat;
+            font-size: 22px;
+            font-family: 'IM Fell French Canon SC', serif;
+            margin-top: 40px;
+
+        }
+        .me{
+            padding-left: 15px;
+            color: #e66f78;
+            text-transform: capitalize;
+
         }
         .container{
             height:300px;
@@ -123,7 +86,8 @@
             text-align: initial;
             font-size: 24px;
             padding: 15px;
-            color: #3f3f3f;
+            color: white;
+            font-family: 'Quicksand', sans-serif;
         }
         .point{
             cursor: pointer;
@@ -134,116 +98,111 @@
             transform: translateY(-2px);
         }
         .name{
-            text-shadow: 1px 1px 2px lightpink;
-            font-size: 40px;
-            padding: 23px 0 0 0;
-            color: #3f3f3f;
+            text-shadow: 1px 1px 2px dimgrey;
+            font-size: 50px;
+            padding: 15px 0 0 0;
+            color: #e66f78;
+            font-family: 'Quicksand', sans-serif;
+
         }
+
+        #description{
+            font-size: 19px;
+            color: white;
+            max-height: 200px;
+            overflow: hidden;
+            transition: all ease 1s;
+        }
+        #div1{
+            transition: all ease 2s;
+        }
+        .hide{
+            max-height: 0;
+            font-family:'Baloo 2', cursive;
+        }
+
         .start{
-            margin: 15px;
-            width: 300px;
-            font-size: 2em;
-            font-family: 'Raleway', sans-serif;
+            margin:0 10px 0 30px;
+            width: 280px;
+            height: 420px;
             padding: 50px;
             position:absolute;
-            top:100px;
-            text-align: center;
+            top:180px;
             cursor: pointer;
             transition: all ease 0.5s;
+            transform: scale(.88);
+            /*box-shadow: 4px 4px 8px black;*/
+
 
         }
         .start:hover{
-            text-shadow: 0 0 3px grey;
-            transform: translateY(-2px);
+            transform: scale(.95);
         }
+        #move{
+            position:relative;
+            margin:0;
+            padding: 0;
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation-iteration-count: 4;
+            color: #444444;
+
+        }
+        .bottom{
+            color: whitesmoke;
+            position: absolute;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 100%;
+            margin-top: 800px;
+
+        }
+
     </style>
-    <script>
-    </script>
+
 </head>
 <body>
-<!--<div class="page">-->
-    <div class="div0">
-        <div class="item"><a href="#div0" style="color: black">Summary</a><div id="div0"></div></div>
-        <div class="item"><a href="#div1" style="color: black">Education</a></div>
-        <div class="item"><a href="#div2" style="color: black">Experience</a></div>
-        <div class="item"><a href="#div3" style="color: black">Skills</a></div>
-        <div class="item"><a href="#div4" style="color: black">Projects</a></div>
+<div class="part1">
+    <div class="nav">
+        <div class="item"><a href="personal website.html" style="color: #e66f78"><h4>Summary</h4></a><div id="div0"></div></div>
+        <div class="item"><a href="edu.html" style="color: #e66f78"><h4>Education</h4></a></div>
+        <div class="item"><a href="experience.html" style="color: #e66f78"><h4>Experience</h4></a></div>
+        <div class="item"><a href="skill.html" style="color: #e66f78"><h4>Skills</h4></a></div>
+        <div class="item"><a href="project.html" style="color: #e66f78"><h4>Projects</h4></a></div>
     </div>
-    <div class="div1">
         <div class="summary">
             <div class="container">
                 <div class="row">
-                <div class="col-5"> <img class="point" src="XX55agAr_400x400.jpg" width="260px" height="260px"></div>
+                <div class="col-5"> <img class="point" src="XX55agAr_400x400.jpg" width="260px" height="260px" alt="image"></div>
                 <div class="col-7">
                     <div class="name"><strong>Chuyue Xiao</strong></div>
                     <ul class="detail">
-                    <li>Mobile: 0420620930</li>
-                    <li>Email: sarah19930930@gmail.com</li>
+                    <li>Mobile: +61420620930</li>
+                    <li>
+                        <span>Email:  </span>
+                        <span><a href="sarah19930930@gmail.com" style="color:#e66f78">sarah19930930@gmail.com</a></span></li>
                         <li>Age:18</li>
-                    <li>Residence: Australia</li></ul>
+                    <li>Residence: Australia</li>
+                    <li>Position: Front-end Developer / UI Designer</li></ul>
                 </div>
             </div>
         </div>
         <div class="about">
-            <strong>ABOUT ME:</strong>
-            <p class="description">I am a recent graduate with a Master of Information Technology & Information Technology Management from the University of Sydney (USYD) seeking a role within the Australian IT industry as a Data Analyst or Project Manager. I am a determined individual and a good team player with excellent time management and communication skills. I enjoy working in small or large teams and am seeking a role where I can develop my data analysing skills, project management skills and front-end development skills.  </p>
+            <h3 class="me">About Me:</h3>
+            <p id="description" class="hide">I am a recent graduate with a Master of Information Technology & Information Technology Management from the University of Sydney (USYD) seeking a role within the Australian IT industry as a Data Analyst or Project Manager. I am a determined individual and a good team player with excellent time management and communication skills. I enjoy working in small or large teams and am seeking a role where I can develop my data analysing skills, project management skills and front-end development skills.  </p>
         </div>
     </div>
-    <div class="start">Get Start to Know Me!</div>
-</div>
-<br>
-<div class="div2">
-    <div class="text">
-        <div id="div1"></div><strong>EDUCATION:</strong></div><br><br><br>
-    <div>
-        <div class="title"> Professional Year [Jun 2019 - Present]</div>
-        <li>Professional Education, SYDNEY, AUSTRALIA</li>
-        <li>Subjects – Professional Workplace Writing, Applying Job-Search Skills, Accelerating Interview Skills, Australian Business Culture, Professional Workplace Environment, Professional Workplace Communication.</li>
-    </div><br>
-    <div>
-        <div class="title">Master of Information Technology & Information Technology Management. <br>[Jul 2016 - Jul 2018]</div>
-        <li>University of Sydney, SYDNEY, AUSTRALIA</li>
-        <li>Major – Software Engineering</li>
-    </div><br>
-    <div>
-        <div class="title">Bachelor of Science in Electrical Engineering. [Sept 2012 - May2016]</div>
-        <li>Florida International University, MIAMI, USA & Hebei University of Technology, TIANJIN, CHINA</li>
-       <li>Achievements – Half Scholarship, GPA 3.6/4.0</li>
+    <div class="start">
+        <h1 class="animated bounce delay-0.5s" id="move">Get Start to Know Me! </h1>
+    </div>
+    <div class="bottom">
+        <p>Personal Website----Chuyue Xiao</p>
     </div>
 </div>
-
-<div class="div3" >
-    <div class="text">
-        <div id="div2"></div><strong>EXPERIENCE:</strong></div><br><br><br>
-    <div><div class="title">Consultant & Sales<br>
-        -FEIFAN ENGLISH TRAINING, SYDNEY, AUSTRALIA [Jun 2019 – Present]</div>
-        <li>Providing highly effective consultation in a busy environment to approximately 10 customers per day.</li>
-        <li>Making tailored study plans and following up customers after class.</li>
-        <li>Training and refining customer service skills for attracting more potential customers.</li>
-        <li>Supporting teachers and marketing managers to arrange offline activities.</li>
-        <li>Achievement: increased enrolment of students and helped shaping company image.</li>
-    </div><br>
-    <div>
-    <div class="title ">Customer Service & Sales<br>
-        -KOLAL KINGDOM (UGG Store), SYDNEY, AUSTRALIA [Jan 2018 – Apr 2018]</div>
-        <li>Provided highly effective customer service for approximately 20 customers per day.</li>
-        <li>Provided high quality after-sale service, online customer service, and handled daily customer complaints.</li>
-        <li>Secondary responsibility included regular visiting to customer and cash handling of up to $2000.00 per day.</li>
-        <li>Achievement: increased daily profits by up to 20%, developed confidence and verbal communication skills through continued liaison with customers.</li>
-    </div><br>
-    <div>
-        <div class="title"> IT Department Intern<br>
-            -GUANGFA BANK, URUMQI, CHINA [Jun 2015 – Aug 2015]</div>
-        <li>Organised and extracted useful data from database through MySQL.</li>
-        <li>Researched into the latest technology trends impacting the banking system.</li>
-        <li>Supported managers to maintain the daily operations of devices and resolved basic technical issues.</li>
-        <li>Achievement: improved devices accuracy, developed data analysing skills, along with customer service skills though IT support.</li>
-    </div>
-</div>
-
-
-
-
-<!--</div>-->
+<script src="CXwebsite.js"></script>
 </body>
 </html>

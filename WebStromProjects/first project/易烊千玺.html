@@ -24,9 +24,8 @@
             background-size: cover;
             width: 580px;
             height: 330px;
-            position: relative;
+            /*position: relative;*/
             font-family: 'Dancing Script', cursive;
-            float: left;
             padding: 10px;
 
         }
@@ -35,16 +34,32 @@
             transform: translateY(-2px);
         }
         .text {
-            margin-top: 25px;
-            padding: 2em;
+            /*margin-top: 25px;*/
+            margin: auto;
+            padding: 20px 0;
             font-size: 20px;
+            max-width: 80%;
             color: whitesmoke;
             font-family: 'Dancing Script', cursive;
-            position: absolute;
-            top: 300px;
+            position: relative;
             text-shadow: 2px 2px 1px black;
-            cursor: pointer;
+
         }
+        .icon {
+            font-size: 30px;
+            color: white;
+            position:absolute;
+            top:20px;
+            right: 0;
+            cursor: pointer;
+            transition: all ease 0.5s;
+        }
+        .icon:hover {
+            text-shadow: 0 0 5px black;
+            transform: translateY(-3px);
+            color:wheat;
+        }
+
         .mark{
             position:absolute;
             right:1.5em;
@@ -62,29 +77,26 @@
             font-family:'Baloo 2', cursive;
             font-size: 16px;
         }
-        .icon {
-            font-size: 30px;
-            color: white;
-            padding: 365px 50px 100px 495px;
-            cursor: pointer;
-        }
+
 
     </style>
 </head>
 <body>
+
 <div class="div1">
     <div class="handsome">
         <div class="mark">Jackson Yee</div>
-    </div>
-    <div class="icon">
-        <i class="far fa-heart"></i>
-    </div>
-    <div class="text">
+        </div>
+        <div class="text">
         <strong>易烊千玺</strong>
+            <div class="icon">
+                <i class="far fa-heart"></i>
+            </div>
         <p class="description">---A Chinese singer, dancer and actor. After a talent manager discovered him at a children
             talent competition, where he performed a hip-hop dance, and signed to TF Entertainment, Jackson became
             the youngest member of the Chinese boy band TFBoys in 2013.</p>
     </div>
+
 </div>
 </body>
 </html>
